@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,11 +11,13 @@
 		959687A32B94E6523D1C0AB8 /* Pods_MVVMCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A06D062398E8D823242A26 /* Pods_MVVMCounterTests.framework */; };
 		976A6665241DAA92000BDCEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A6664241DAA92000BDCEF /* AppDelegate.swift */; };
 		976A6667241DAA92000BDCEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A6666241DAA92000BDCEF /* SceneDelegate.swift */; };
-		976A6669241DAA92000BDCEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A6668241DAA92000BDCEF /* ViewController.swift */; };
+		976A6669241DAA92000BDCEF /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A6668241DAA92000BDCEF /* CounterViewController.swift */; };
 		976A666C241DAA92000BDCEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976A666A241DAA92000BDCEF /* Main.storyboard */; };
 		976A666E241DAA95000BDCEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 976A666D241DAA95000BDCEF /* Assets.xcassets */; };
 		976A6671241DAA95000BDCEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976A666F241DAA95000BDCEF /* LaunchScreen.storyboard */; };
 		976A667C241DAA96000BDCEF /* MVVMCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A667B241DAA96000BDCEF /* MVVMCounterTests.swift */; };
+		9789659C241DBEE90067D4E7 /* CounterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9789659B241DBEE90067D4E7 /* CounterModel.swift */; };
+		9789659E241DC4160067D4E7 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9789659D241DC4160067D4E7 /* CounterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 		976A6661241DAA92000BDCEF /* MVVMCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		976A6664241DAA92000BDCEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		976A6666241DAA92000BDCEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		976A6668241DAA92000BDCEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		976A6668241DAA92000BDCEF /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		976A666B241DAA92000BDCEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		976A666D241DAA95000BDCEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		976A6670241DAA95000BDCEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +46,8 @@
 		976A6677241DAA96000BDCEF /* MVVMCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		976A667B241DAA96000BDCEF /* MVVMCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCounterTests.swift; sourceTree = "<group>"; };
 		976A667D241DAA96000BDCEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9789659B241DBEE90067D4E7 /* CounterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterModel.swift; sourceTree = "<group>"; };
+		9789659D241DC4160067D4E7 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		C2A06D062398E8D823242A26 /* Pods_MVVMCounterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMCounterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BD7A9CDEB68A2EA1FBD96D /* Pods-MVVMCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMCounter.release.xcconfig"; path = "Target Support Files/Pods-MVVMCounter/Pods-MVVMCounter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,7 +80,6 @@
 				22C7C9E63B9D74218633CCB6 /* Pods-MVVMCounterTests.debug.xcconfig */,
 				5ACF078AFA2B276A45D7F0E6 /* Pods-MVVMCounterTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,11 +117,13 @@
 			children = (
 				976A6664241DAA92000BDCEF /* AppDelegate.swift */,
 				976A6666241DAA92000BDCEF /* SceneDelegate.swift */,
-				976A6668241DAA92000BDCEF /* ViewController.swift */,
+				976A6668241DAA92000BDCEF /* CounterViewController.swift */,
 				976A666A241DAA92000BDCEF /* Main.storyboard */,
 				976A666D241DAA95000BDCEF /* Assets.xcassets */,
 				976A666F241DAA95000BDCEF /* LaunchScreen.storyboard */,
 				976A6672241DAA95000BDCEF /* Info.plist */,
+				9789659B241DBEE90067D4E7 /* CounterModel.swift */,
+				9789659D241DC4160067D4E7 /* CounterViewModel.swift */,
 			);
 			path = MVVMCounter;
 			sourceTree = "<group>";
@@ -300,8 +305,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				976A6669241DAA92000BDCEF /* ViewController.swift in Sources */,
+				9789659E241DC4160067D4E7 /* CounterViewModel.swift in Sources */,
+				976A6669241DAA92000BDCEF /* CounterViewController.swift in Sources */,
 				976A6665241DAA92000BDCEF /* AppDelegate.swift in Sources */,
+				9789659C241DBEE90067D4E7 /* CounterModel.swift in Sources */,
 				976A6667241DAA92000BDCEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
