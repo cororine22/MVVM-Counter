@@ -1,1 +1,4 @@
 vendor
+Pods
+xcuserdata
+*.xcworkspace
