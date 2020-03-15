@@ -6,6 +6,7 @@ target 'MVVMCounter' do
   use_frameworks!
 
   pod 'RxSwift'
+  pod 'RxCocoa'
 
   target 'MVVMCounterTests' do
     inherit! :search_paths
